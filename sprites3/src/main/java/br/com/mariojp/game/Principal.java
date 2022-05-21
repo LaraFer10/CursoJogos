@@ -17,6 +17,7 @@ public class Principal extends JFrame {
     }
     
     private void initUI() {
+    	//TODO JGO TER UMA INSTANCIA
         add(new Jogo());
         setResizable(false);
         pack();

@@ -5,7 +5,7 @@ import java.awt.Rectangle;
 
 import javax.swing.ImageIcon;
 
-public class Sprite {
+public abstract class Sprite {
 	protected int x;
 	protected int y;
 	protected int width;
@@ -18,6 +18,7 @@ public class Sprite {
 		this.x = x;
 		this.y = y;
 		visibilty = true;
+		//initNave();
 	}
 
 	protected void carregarImagem(String imageName) {
@@ -53,4 +54,6 @@ public class Sprite {
 	public Rectangle getBounds() {
 		return new Rectangle(x, y, width, height);
 	}
+	
+	//public abstract void initNave();
 }

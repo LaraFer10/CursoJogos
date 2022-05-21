@@ -19,6 +19,7 @@ import javax.swing.Timer;
 
 public class Jogo extends JPanel implements ActionListener {
 	//TODO SUBSTITUIR POR PADRÃO DECORATOR
+	//TODO RETORNAR AO JOGOO FINALIZAR
 
 	private static final long serialVersionUID = 1L;
 

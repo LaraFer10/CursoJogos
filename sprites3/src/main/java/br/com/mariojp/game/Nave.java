@@ -15,11 +15,10 @@ public class Nave extends Sprite {
 	public Nave(int x, int y, int alcance) {
 		super(x, y);
 		this.alcance = alcance;
-		initNave();
 	}
 
 	//TODO ADICIONAR UM FACTORY DE INICIALIZAÇÃO (?)
-	private void initNave() {
+	public void initNave() {
 		missiles = new ArrayList<Missil>(); 
 		carregarImagem("/imagens/nave.png"); 
 		getImageDimensions();

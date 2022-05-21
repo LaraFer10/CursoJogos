@@ -11,7 +11,7 @@ public class Missil extends Sprite{
 		this.alcance = alcance;
 	    initMissil();
 	}
-	//TODO ADICIONAR UM FACTORY DE INICIALIZAÇÃO (?)
+	//TODO ADICIONAR TEMPLATE METHOD AO SPRITE
 	private void initMissil() { 
 		carregarImagem("/imagens/missil.png"); 
 		getImageDimensions();
