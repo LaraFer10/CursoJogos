@@ -34,7 +34,8 @@ public class Nave extends Sprite {
 		return image;
 	}
 
-	public void keyPressed(KeyEvent e) { 
+	public void keyPressed(KeyEvent e) {
+		//TODO SUBSTITUIR POR SWITCH CASE
 		int key = e.getKeyCode();
 		if (key == KeyEvent.VK_SPACE) {
 			atira(); 
@@ -54,7 +55,8 @@ public class Nave extends Sprite {
 		missiles.add(new Missil(x + width, y + height / 2, alcance ));		
 	}
 
-	public void keyReleased(KeyEvent e) { 
+	public void keyReleased(KeyEvent e) {
+		//TODO SUBSTITUIR POR SWITCH CASE
 		int key = e.getKeyCode();
 		if (key == KeyEvent.VK_LEFT){ 
 			dx =0;
