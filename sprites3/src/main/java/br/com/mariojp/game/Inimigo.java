@@ -10,6 +10,7 @@ public class Inimigo extends Sprite {
 		initInimigo();
 	}
 
+	//TODO ADICIONAR UM FACTORY DE INICIALIZAÇÃO (?)
 	private void initInimigo() {
 		carregarImagem("/imagens/alien.png");
 		getImageDimensions();

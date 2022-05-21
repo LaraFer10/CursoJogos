@@ -18,6 +18,7 @@ public class Nave extends Sprite {
 		initNave();
 	}
 
+	//TODO ADICIONAR UM FACTORY DE INICIALIZAÇÃO (?)
 	private void initNave() {
 		missiles = new ArrayList<Missil>(); 
 		carregarImagem("/imagens/nave.png"); 
