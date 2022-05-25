@@ -11,7 +11,6 @@ public abstract class Sprite {
 	protected int width;
 	protected int height;
 	protected boolean visibilty;
-	protected String imgComponent;
 
 	protected Image image;
 
@@ -19,7 +18,6 @@ public abstract class Sprite {
 		this.x = x;
 		this.y = y;
 		visibilty = true;
-		initComponent();
 	}
 
 	protected void carregarImagem(String imageName) {
@@ -56,7 +54,7 @@ public abstract class Sprite {
 		return new Rectangle(x, y, width, height);
 	}
 	
-	public void initComponent(){
+	public void initComponent(String imgComponent){
 		carregarImagem(imgComponent);
 		getImageDimensions();
 	}

@@ -9,13 +9,8 @@ public class Missil extends Sprite{
 	public Missil(int x, int y,int alcance) {
 		super(x, y);
 		this.alcance = alcance;
-		imgComponent = "/imagens/missil.png";
+		initComponent("/imagens/missil.png");
 	}
-	//TODO ADICIONAR TEMPLATE METHOD AO SPRITE
-	/*private void initMissil() {
-		carregarImagem("/imagens/missil.png"); 
-		getImageDimensions();
-	 }*/
 	
 	public void move() {
 		x += MISSILE_SPEED;

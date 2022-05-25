@@ -16,15 +16,8 @@ public class Nave extends Sprite {
 		super(x, y);
 		this.alcance = alcance;
 		missiles = new ArrayList<Missil>();
-		imgComponent = "/imagens/nave.png";
+		initComponent("/imagens/nave.png");
 	}
-
-	//TODO ADICIONAR UM FACTORY DE INICIALIZAÇÃO (?)
-	/*public void initNave() {
-		missiles = new ArrayList<Missil>(); 
-		carregarImagem("/imagens/nave.png"); 
-		getImageDimensions();
-	}*/
 
 	public void move() {
 		x += dx;
@@ -37,19 +30,14 @@ public class Nave extends Sprite {
 	}
 
 	public void keyPressed(KeyEvent e) {
-		//TODO SUBSTITUIR POR SWITCH CASE
 		int key = e.getKeyCode();
 		if (key == KeyEvent.VK_SPACE) {
 			atira(); 
 		}
-		if (key == KeyEvent.VK_LEFT){ 
+		if (key == KeyEvent.VK_LEFT || key==KeyEvent.VK_UP){
 			dx= -1;
-		}if(key==KeyEvent.VK_RIGHT){
+		}if(key==KeyEvent.VK_RIGHT || key==KeyEvent.VK_DOWN){
 			dx = 1;
-		}if(key==KeyEvent.VK_UP){
-			dy= -1;
-		}if(key==KeyEvent.VK_DOWN){
-			dy= 1;
 		}
 	}
 	
@@ -58,16 +46,9 @@ public class Nave extends Sprite {
 	}
 
 	public void keyReleased(KeyEvent e) {
-		//TODO SUBSTITUIR POR SWITCH CASE
 		int key = e.getKeyCode();
-		if (key == KeyEvent.VK_LEFT){ 
+		if (key == KeyEvent.VK_LEFT || key==KeyEvent.VK_RIGHT || key==KeyEvent.VK_UP || key==KeyEvent.VK_DOWN){
 			dx =0;
-		}if(key==KeyEvent.VK_RIGHT){
-			dx =0;
-		}if(key==KeyEvent.VK_UP){
-			dy=0;
-		}if(key==KeyEvent.VK_DOWN){
-			dy=0;
 		}
 	}
 
